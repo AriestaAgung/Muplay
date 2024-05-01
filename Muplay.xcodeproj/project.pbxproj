@@ -13,6 +13,13 @@
 		EBF327CB2BE1D7B5007296FF /* MuplayTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBF327CA2BE1D7B5007296FF /* MuplayTests.swift */; };
 		EBF327D52BE1D7B5007296FF /* MuplayUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBF327D42BE1D7B5007296FF /* MuplayUITests.swift */; };
 		EBF327D72BE1D7B5007296FF /* MuplayUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBF327D62BE1D7B5007296FF /* MuplayUITestsLaunchTests.swift */; };
+		EBF327ED2BE1E1AF007296FF /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBF327EB2BE1E1AF007296FF /* HomeView.swift */; };
+		EBF327EE2BE1E1AF007296FF /* HomeView.xib in Resources */ = {isa = PBXBuildFile; fileRef = EBF327EC2BE1E1AF007296FF /* HomeView.xib */; };
+		EBF327F12BE1E1C8007296FF /* HomePresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBF327F02BE1E1C8007296FF /* HomePresenter.swift */; };
+		EBF327F32BE1E1D4007296FF /* HomeContext.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBF327F22BE1E1D4007296FF /* HomeContext.swift */; };
+		EBF327F62BE1E1EE007296FF /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBF327F52BE1E1EE007296FF /* NetworkManager.swift */; };
+		EBF327F82BE1E344007296FF /* HomeProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBF327F72BE1E344007296FF /* HomeProtocols.swift */; };
+		EBF327FC2BE1E3F1007296FF /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBF327FB2BE1E3F1007296FF /* BaseViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -43,6 +50,13 @@
 		EBF327D02BE1D7B5007296FF /* MuplayUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MuplayUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		EBF327D42BE1D7B5007296FF /* MuplayUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MuplayUITests.swift; sourceTree = "<group>"; };
 		EBF327D62BE1D7B5007296FF /* MuplayUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MuplayUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		EBF327EB2BE1E1AF007296FF /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
+		EBF327EC2BE1E1AF007296FF /* HomeView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HomeView.xib; sourceTree = "<group>"; };
+		EBF327F02BE1E1C8007296FF /* HomePresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomePresenter.swift; sourceTree = "<group>"; };
+		EBF327F22BE1E1D4007296FF /* HomeContext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeContext.swift; sourceTree = "<group>"; };
+		EBF327F52BE1E1EE007296FF /* NetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
+		EBF327F72BE1E344007296FF /* HomeProtocols.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeProtocols.swift; sourceTree = "<group>"; };
+		EBF327FB2BE1E3F1007296FF /* BaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -93,10 +107,10 @@
 		EBF327B92BE1D7B4007296FF /* Muplay */ = {
 			isa = PBXGroup;
 			children = (
-				EBF327BA2BE1D7B4007296FF /* AppDelegate.swift */,
-				EBF327BC2BE1D7B5007296FF /* Assets.xcassets */,
-				EBF327BE2BE1D7B5007296FF /* MainMenu.xib */,
-				EBF327C12BE1D7B5007296FF /* Muplay.entitlements */,
+				EBF327E62BE1E086007296FF /* Core */,
+				EBF327E52BE1E068007296FF /* Common */,
+				EBF327E42BE1DA19007296FF /* App */,
+				EBF327E32BE1DA08007296FF /* Modules */,
 			);
 			path = Muplay;
 			sourceTree = "<group>";
@@ -116,6 +130,93 @@
 				EBF327D62BE1D7B5007296FF /* MuplayUITestsLaunchTests.swift */,
 			);
 			path = MuplayUITests;
+			sourceTree = "<group>";
+		};
+		EBF327E32BE1DA08007296FF /* Modules */ = {
+			isa = PBXGroup;
+			children = (
+				EBF327E82BE1E098007296FF /* Home */,
+			);
+			path = Modules;
+			sourceTree = "<group>";
+		};
+		EBF327E42BE1DA19007296FF /* App */ = {
+			isa = PBXGroup;
+			children = (
+				EBF327BA2BE1D7B4007296FF /* AppDelegate.swift */,
+				EBF327BC2BE1D7B5007296FF /* Assets.xcassets */,
+				EBF327BE2BE1D7B5007296FF /* MainMenu.xib */,
+				EBF327C12BE1D7B5007296FF /* Muplay.entitlements */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		EBF327E52BE1E068007296FF /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				EBF327F92BE1E3D6007296FF /* UI */,
+				EBF327F42BE1E1DE007296FF /* Utils */,
+				EBF327E72BE1E08E007296FF /* Extensions */,
+			);
+			path = Common;
+			sourceTree = "<group>";
+		};
+		EBF327E62BE1E086007296FF /* Core */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Core;
+			sourceTree = "<group>";
+		};
+		EBF327E72BE1E08E007296FF /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		EBF327E82BE1E098007296FF /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				EBF327EF2BE1E1B6007296FF /* Views */,
+				EBF327F02BE1E1C8007296FF /* HomePresenter.swift */,
+				EBF327F22BE1E1D4007296FF /* HomeContext.swift */,
+				EBF327F72BE1E344007296FF /* HomeProtocols.swift */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		EBF327EF2BE1E1B6007296FF /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				EBF327EB2BE1E1AF007296FF /* HomeView.swift */,
+				EBF327EC2BE1E1AF007296FF /* HomeView.xib */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		EBF327F42BE1E1DE007296FF /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				EBF327F52BE1E1EE007296FF /* NetworkManager.swift */,
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
+		EBF327F92BE1E3D6007296FF /* UI */ = {
+			isa = PBXGroup;
+			children = (
+				EBF327FA2BE1E3DC007296FF /* ViewController */,
+			);
+			path = UI;
+			sourceTree = "<group>";
+		};
+		EBF327FA2BE1E3DC007296FF /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				EBF327FB2BE1E3F1007296FF /* BaseViewController.swift */,
+			);
+			path = ViewController;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -224,6 +325,7 @@
 			files = (
 				EBF327BD2BE1D7B5007296FF /* Assets.xcassets in Resources */,
 				EBF327C02BE1D7B5007296FF /* Base in Resources */,
+				EBF327EE2BE1E1AF007296FF /* HomeView.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -248,7 +350,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EBF327F12BE1E1C8007296FF /* HomePresenter.swift in Sources */,
 				EBF327BB2BE1D7B4007296FF /* AppDelegate.swift in Sources */,
+				EBF327F62BE1E1EE007296FF /* NetworkManager.swift in Sources */,
+				EBF327F32BE1E1D4007296FF /* HomeContext.swift in Sources */,
+				EBF327F82BE1E344007296FF /* HomeProtocols.swift in Sources */,
+				EBF327FC2BE1E3F1007296FF /* BaseViewController.swift in Sources */,
+				EBF327ED2BE1E1AF007296FF /* HomeView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -420,6 +528,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_ENTITLEMENTS = Muplay/Muplay.entitlements;
+				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				CURRENT_PROJECT_VERSION = 1;
@@ -433,8 +542,9 @@
 					"$(inherited)",
 					"@executable_path/../Frameworks",
 				);
+				MACOSX_DEPLOYMENT_TARGET = 11.0;
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.dcd.Muplay;
+				PRODUCT_BUNDLE_IDENTIFIER = com.dcd.Muplax;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
@@ -447,6 +557,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_ENTITLEMENTS = Muplay/Muplay.entitlements;
+				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				CURRENT_PROJECT_VERSION = 1;
@@ -460,8 +571,9 @@
 					"$(inherited)",
 					"@executable_path/../Frameworks",
 				);
+				MACOSX_DEPLOYMENT_TARGET = 11.0;
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.dcd.Muplay;
+				PRODUCT_BUNDLE_IDENTIFIER = com.dcd.Muplax;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
