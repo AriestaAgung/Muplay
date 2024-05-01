@@ -6,19 +6,29 @@
 //
 
 import Cocoa
-
+import AppKit
 class BaseTransparentWindow: NSWindow {
-    override init(contentRect: NSRect, styleMask style: NSWindow.StyleMask, backing backingStoreType: NSWindow.BackingStoreType, defer flag: Bool) {
-        super.init(contentRect: contentRect, styleMask: style, backing: backingStoreType, defer: flag)
-        isOpaque = true
-        hasShadow = true
-        backgroundColor = .blue
-        titlebarAppearsTransparent = false
+    init(windowTitle: CommonConstant, _ view: NSViewController) {
+        super.init(
+            contentRect: NSMakeRect(0, 0,  NSScreen.main!.frame.width/2, NSScreen.main!.frame.height/2),
+            styleMask: [.resizable,.miniaturizable,.closable, .titled, .unifiedTitleAndToolbar],
+            backing: .buffered,
+            defer: true
+        )
+        isOpaque = false
+        hasShadow = false
+        backgroundColor = .clear
+        titlebarAppearsTransparent = true
         isMovable = true
         isMovableByWindowBackground = true
-        
+        title = windowTitle.rawValue
+        titlebarSeparatorStyle = .none
         if let screenFrame = NSScreen.main?.frame {
             setFrame(screenFrame, display: true)
         }
+        contentViewController = view
+        
     }
+    
 }
+

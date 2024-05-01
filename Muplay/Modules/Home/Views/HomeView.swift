@@ -12,10 +12,6 @@ class HomeView: BaseViewController, HomeViewDelegate {
         
     override func viewDidLoad() {
         super.viewDidLoad()
-        view.wantsLayer = true
-        view.layer?.cornerRadius = 20
-        view.layer?.backgroundColor = NSColor.systemPink.cgColor
-        
     }
     
 }

@@ -6,22 +6,19 @@
 //
 
 import Cocoa
+import AppKit
 
 class AppDelegate: NSObject, NSApplicationDelegate {
 
-    @IBOutlet var window: NSWindow!
-    private let newWindow = BaseTransparentWindow(
-        contentRect: NSMakeRect(0, 0, NSScreen.main!.frame.width/2, NSScreen.main!.frame.height/2),
-        styleMask: [.resizable,.miniaturizable,.closable, .fullSizeContentView, .borderless, .unifiedTitleAndToolbar],
-        backing: .buffered,
-        defer: true
-    )
-    private var windowController: NSWindowController?
-    
+    private let newWindow = BaseTransparentWindow(windowTitle: .emptyString, HomeConfigurator.shared.createHomeModule())
+    private var windowController: BaseWindowController?
 
     func applicationDidFinishLaunching(_ aNotification: Notification) {
-        newWindow.contentViewController = HomeConfigurator.shared.createHomeModule()
-        newWindow.makeKeyAndOrderFront(nil)
+//        newWindow.center()
+//        newWindow.contentView?.addSubview(HomeConfigurator.shared.createHomeModule().view)
+        windowController = BaseWindowController(window: newWindow)
+        
+        windowController?.showWindow(self)
     }
 
     func applicationWillTerminate(_ aNotification: Notification) {

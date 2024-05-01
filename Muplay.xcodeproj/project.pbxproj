@@ -10,14 +10,16 @@
 		2380EE2BCB1A9FA55FC01794 /* Pods_MuplayTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A708667B45A3DB4FFA4EA986 /* Pods_MuplayTests.framework */; };
 		5DDCA2BE3AA7C0C443011AE1 /* Pods_Muplay.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B784A8F565E15D34825EE30A /* Pods_Muplay.framework */; };
 		E13739826DF03A6FB8D8B1B1 /* Pods_Muplay_MuplayUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2EA2A0AC088DD19113E236CE /* Pods_Muplay_MuplayUITests.framework */; };
+		EB2F06552BE2145400D1CF1D /* CommonConstant.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB2F06542BE2145400D1CF1D /* CommonConstant.swift */; };
+		EB2F065A2BE222CD00D1CF1D /* HomeView.xib in Resources */ = {isa = PBXBuildFile; fileRef = EB2F06592BE222CD00D1CF1D /* HomeView.xib */; };
+		EB2F065B2BE222CD00D1CF1D /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB2F06582BE222CD00D1CF1D /* HomeView.swift */; };
+		EB2F065E2BE2297F00D1CF1D /* BaseWindowController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB2F065D2BE2297F00D1CF1D /* BaseWindowController.swift */; };
 		EBF327BB2BE1D7B4007296FF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBF327BA2BE1D7B4007296FF /* AppDelegate.swift */; };
 		EBF327BD2BE1D7B5007296FF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EBF327BC2BE1D7B5007296FF /* Assets.xcassets */; };
 		EBF327C02BE1D7B5007296FF /* Base in Resources */ = {isa = PBXBuildFile; fileRef = EBF327BF2BE1D7B5007296FF /* Base */; };
 		EBF327CB2BE1D7B5007296FF /* MuplayTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBF327CA2BE1D7B5007296FF /* MuplayTests.swift */; };
 		EBF327D52BE1D7B5007296FF /* MuplayUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBF327D42BE1D7B5007296FF /* MuplayUITests.swift */; };
 		EBF327D72BE1D7B5007296FF /* MuplayUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBF327D62BE1D7B5007296FF /* MuplayUITestsLaunchTests.swift */; };
-		EBF327ED2BE1E1AF007296FF /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBF327EB2BE1E1AF007296FF /* HomeView.swift */; };
-		EBF327EE2BE1E1AF007296FF /* HomeView.xib in Resources */ = {isa = PBXBuildFile; fileRef = EBF327EC2BE1E1AF007296FF /* HomeView.xib */; };
 		EBF327F12BE1E1C8007296FF /* HomePresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBF327F02BE1E1C8007296FF /* HomePresenter.swift */; };
 		EBF327F32BE1E1D4007296FF /* HomeContext.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBF327F22BE1E1D4007296FF /* HomeContext.swift */; };
 		EBF327F62BE1E1EE007296FF /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBF327F52BE1E1EE007296FF /* NetworkManager.swift */; };
@@ -54,6 +56,10 @@
 		9D8DA882D16950A104E8E70F /* Pods-Muplay-MuplayUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Muplay-MuplayUITests.release.xcconfig"; path = "Target Support Files/Pods-Muplay-MuplayUITests/Pods-Muplay-MuplayUITests.release.xcconfig"; sourceTree = "<group>"; };
 		A708667B45A3DB4FFA4EA986 /* Pods_MuplayTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MuplayTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		B784A8F565E15D34825EE30A /* Pods_Muplay.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Muplay.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		EB2F06542BE2145400D1CF1D /* CommonConstant.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommonConstant.swift; sourceTree = "<group>"; };
+		EB2F06582BE222CD00D1CF1D /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
+		EB2F06592BE222CD00D1CF1D /* HomeView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HomeView.xib; sourceTree = "<group>"; };
+		EB2F065D2BE2297F00D1CF1D /* BaseWindowController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseWindowController.swift; sourceTree = "<group>"; };
 		EBF327B72BE1D7B4007296FF /* Muplay.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Muplay.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		EBF327BA2BE1D7B4007296FF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		EBF327BC2BE1D7B5007296FF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -64,8 +70,6 @@
 		EBF327D02BE1D7B5007296FF /* MuplayUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MuplayUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		EBF327D42BE1D7B5007296FF /* MuplayUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MuplayUITests.swift; sourceTree = "<group>"; };
 		EBF327D62BE1D7B5007296FF /* MuplayUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MuplayUITestsLaunchTests.swift; sourceTree = "<group>"; };
-		EBF327EB2BE1E1AF007296FF /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
-		EBF327EC2BE1E1AF007296FF /* HomeView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HomeView.xib; sourceTree = "<group>"; };
 		EBF327F02BE1E1C8007296FF /* HomePresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomePresenter.swift; sourceTree = "<group>"; };
 		EBF327F22BE1E1D4007296FF /* HomeContext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeContext.swift; sourceTree = "<group>"; };
 		EBF327F52BE1E1EE007296FF /* NetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
@@ -115,6 +119,14 @@
 				A708667B45A3DB4FFA4EA986 /* Pods_MuplayTests.framework */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		EB2F065C2BE2296100D1CF1D /* NSWindowController */ = {
+			isa = PBXGroup;
+			children = (
+				EB2F065D2BE2297F00D1CF1D /* BaseWindowController.swift */,
+			);
+			path = NSWindowController;
 			sourceTree = "<group>";
 		};
 		EBF327AE2BE1D7B4007296FF = {
@@ -180,9 +192,9 @@
 			children = (
 				EBF327BA2BE1D7B4007296FF /* AppDelegate.swift */,
 				EBF327BC2BE1D7B5007296FF /* Assets.xcassets */,
+				EBF328032BE1EF38007296FF /* main.swift */,
 				EBF327BE2BE1D7B5007296FF /* MainMenu.xib */,
 				EBF327C12BE1D7B5007296FF /* Muplay.entitlements */,
-				EBF328032BE1EF38007296FF /* main.swift */,
 			);
 			path = App;
 			sourceTree = "<group>";
@@ -227,8 +239,8 @@
 		EBF327EF2BE1E1B6007296FF /* Views */ = {
 			isa = PBXGroup;
 			children = (
-				EBF327EB2BE1E1AF007296FF /* HomeView.swift */,
-				EBF327EC2BE1E1AF007296FF /* HomeView.xib */,
+				EB2F06582BE222CD00D1CF1D /* HomeView.swift */,
+				EB2F06592BE222CD00D1CF1D /* HomeView.xib */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -237,6 +249,7 @@
 			isa = PBXGroup;
 			children = (
 				EBF327F52BE1E1EE007296FF /* NetworkManager.swift */,
+				EB2F06542BE2145400D1CF1D /* CommonConstant.swift */,
 			);
 			path = Utils;
 			sourceTree = "<group>";
@@ -244,6 +257,7 @@
 		EBF327F92BE1E3D6007296FF /* UI */ = {
 			isa = PBXGroup;
 			children = (
+				EB2F065C2BE2296100D1CF1D /* NSWindowController */,
 				EBF327FD2BE1E937007296FF /* NSWindow */,
 				EBF327FA2BE1E3DC007296FF /* ViewController */,
 			);
@@ -276,7 +290,6 @@
 				43DFA2ECF0D1FA782AE9073B /* Pods-MuplayTests.debug.xcconfig */,
 				856C15F54DCBE2F74A38CDCA /* Pods-MuplayTests.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -391,7 +404,7 @@
 			files = (
 				EBF327BD2BE1D7B5007296FF /* Assets.xcassets in Resources */,
 				EBF327C02BE1D7B5007296FF /* Base in Resources */,
-				EBF327EE2BE1E1AF007296FF /* HomeView.xib in Resources */,
+				EB2F065A2BE222CD00D1CF1D /* HomeView.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -521,14 +534,16 @@
 			files = (
 				EBF328042BE1EF38007296FF /* main.swift in Sources */,
 				EBF327F12BE1E1C8007296FF /* HomePresenter.swift in Sources */,
+				EB2F06552BE2145400D1CF1D /* CommonConstant.swift in Sources */,
 				EBF327BB2BE1D7B4007296FF /* AppDelegate.swift in Sources */,
 				EBF327F62BE1E1EE007296FF /* NetworkManager.swift in Sources */,
+				EB2F065E2BE2297F00D1CF1D /* BaseWindowController.swift in Sources */,
 				EBF327FF2BE1E95C007296FF /* BaseTransparentWindow.swift in Sources */,
 				EBF327F32BE1E1D4007296FF /* HomeContext.swift in Sources */,
 				EBF327F82BE1E344007296FF /* HomeProtocols.swift in Sources */,
 				EBF328062BE1F11F007296FF /* HomeConfigurator.swift in Sources */,
+				EB2F065B2BE222CD00D1CF1D /* HomeView.swift in Sources */,
 				EBF327FC2BE1E3F1007296FF /* BaseViewController.swift in Sources */,
-				EBF327ED2BE1E1AF007296FF /* HomeView.swift in Sources */,
 				EBF328082BE1F284007296FF /* HomeRouter.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -708,9 +723,11 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = R2D4D7YLB2;
 				ENABLE_HARDENED_RUNTIME = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_NSHumanReadableCopyright = "";
 				INFOPLIST_KEY_NSPrincipalClass = NSApplication;
+				INFOPLIST_KEY_UILaunchStoryboardName = "";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/../Frameworks",
@@ -737,9 +754,11 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = R2D4D7YLB2;
 				ENABLE_HARDENED_RUNTIME = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_NSHumanReadableCopyright = "";
 				INFOPLIST_KEY_NSPrincipalClass = NSApplication;
+				INFOPLIST_KEY_UILaunchStoryboardName = "";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/../Frameworks",

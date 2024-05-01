@@ -6,7 +6,7 @@
 //
 
 import Cocoa
-
+import SnapKit
 class BaseViewController: NSViewController {
 
     override func viewDidLoad() {
@@ -16,9 +16,8 @@ class BaseViewController: NSViewController {
     
     private func setupView() {
         view.wantsLayer = true
-        view.layer?.backgroundColor = NSColor.orange.cgColor
+        view.layer?.backgroundColor = NSColor.systemPink.cgColor
         view.layer?.cornerRadius = 20
-        view.translatesAutoresizingMaskIntoConstraints = false
     }
     
 }
