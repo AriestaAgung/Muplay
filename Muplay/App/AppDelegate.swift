@@ -14,10 +14,8 @@ class AppDelegate: NSObject, NSApplicationDelegate {
     private var windowController: BaseWindowController?
 
     func applicationDidFinishLaunching(_ aNotification: Notification) {
-//        newWindow.center()
-//        newWindow.contentView?.addSubview(HomeConfigurator.shared.createHomeModule().view)
         windowController = BaseWindowController(window: newWindow)
-        
+        windowController?.window?.center()
         windowController?.showWindow(self)
     }
 
