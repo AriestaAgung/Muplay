@@ -1,0 +1,585 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		EBF327BB2BE1D7B4007296FF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBF327BA2BE1D7B4007296FF /* AppDelegate.swift */; };
+		EBF327BD2BE1D7B5007296FF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EBF327BC2BE1D7B5007296FF /* Assets.xcassets */; };
+		EBF327C02BE1D7B5007296FF /* Base in Resources */ = {isa = PBXBuildFile; fileRef = EBF327BF2BE1D7B5007296FF /* Base */; };
+		EBF327CB2BE1D7B5007296FF /* MuplayTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBF327CA2BE1D7B5007296FF /* MuplayTests.swift */; };
+		EBF327D52BE1D7B5007296FF /* MuplayUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBF327D42BE1D7B5007296FF /* MuplayUITests.swift */; };
+		EBF327D72BE1D7B5007296FF /* MuplayUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBF327D62BE1D7B5007296FF /* MuplayUITestsLaunchTests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		EBF327C72BE1D7B5007296FF /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = EBF327AF2BE1D7B4007296FF /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = EBF327B62BE1D7B4007296FF;
+			remoteInfo = Muplay;
+		};
+		EBF327D12BE1D7B5007296FF /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = EBF327AF2BE1D7B4007296FF /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = EBF327B62BE1D7B4007296FF;
+			remoteInfo = Muplay;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		EBF327B72BE1D7B4007296FF /* Muplay.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Muplay.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		EBF327BA2BE1D7B4007296FF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		EBF327BC2BE1D7B5007296FF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		EBF327BF2BE1D7B5007296FF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/MainMenu.xib; sourceTree = "<group>"; };
+		EBF327C12BE1D7B5007296FF /* Muplay.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Muplay.entitlements; sourceTree = "<group>"; };
+		EBF327C62BE1D7B5007296FF /* MuplayTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MuplayTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		EBF327CA2BE1D7B5007296FF /* MuplayTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MuplayTests.swift; sourceTree = "<group>"; };
+		EBF327D02BE1D7B5007296FF /* MuplayUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MuplayUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		EBF327D42BE1D7B5007296FF /* MuplayUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MuplayUITests.swift; sourceTree = "<group>"; };
+		EBF327D62BE1D7B5007296FF /* MuplayUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MuplayUITestsLaunchTests.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		EBF327B42BE1D7B4007296FF /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EBF327C32BE1D7B5007296FF /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EBF327CD2BE1D7B5007296FF /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		EBF327AE2BE1D7B4007296FF = {
+			isa = PBXGroup;
+			children = (
+				EBF327B92BE1D7B4007296FF /* Muplay */,
+				EBF327C92BE1D7B5007296FF /* MuplayTests */,
+				EBF327D32BE1D7B5007296FF /* MuplayUITests */,
+				EBF327B82BE1D7B4007296FF /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		EBF327B82BE1D7B4007296FF /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				EBF327B72BE1D7B4007296FF /* Muplay.app */,
+				EBF327C62BE1D7B5007296FF /* MuplayTests.xctest */,
+				EBF327D02BE1D7B5007296FF /* MuplayUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		EBF327B92BE1D7B4007296FF /* Muplay */ = {
+			isa = PBXGroup;
+			children = (
+				EBF327BA2BE1D7B4007296FF /* AppDelegate.swift */,
+				EBF327BC2BE1D7B5007296FF /* Assets.xcassets */,
+				EBF327BE2BE1D7B5007296FF /* MainMenu.xib */,
+				EBF327C12BE1D7B5007296FF /* Muplay.entitlements */,
+			);
+			path = Muplay;
+			sourceTree = "<group>";
+		};
+		EBF327C92BE1D7B5007296FF /* MuplayTests */ = {
+			isa = PBXGroup;
+			children = (
+				EBF327CA2BE1D7B5007296FF /* MuplayTests.swift */,
+			);
+			path = MuplayTests;
+			sourceTree = "<group>";
+		};
+		EBF327D32BE1D7B5007296FF /* MuplayUITests */ = {
+			isa = PBXGroup;
+			children = (
+				EBF327D42BE1D7B5007296FF /* MuplayUITests.swift */,
+				EBF327D62BE1D7B5007296FF /* MuplayUITestsLaunchTests.swift */,
+			);
+			path = MuplayUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		EBF327B62BE1D7B4007296FF /* Muplay */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = EBF327DA2BE1D7B5007296FF /* Build configuration list for PBXNativeTarget "Muplay" */;
+			buildPhases = (
+				EBF327B32BE1D7B4007296FF /* Sources */,
+				EBF327B42BE1D7B4007296FF /* Frameworks */,
+				EBF327B52BE1D7B4007296FF /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Muplay;
+			productName = Muplay;
+			productReference = EBF327B72BE1D7B4007296FF /* Muplay.app */;
+			productType = "com.apple.product-type.application";
+		};
+		EBF327C52BE1D7B5007296FF /* MuplayTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = EBF327DD2BE1D7B5007296FF /* Build configuration list for PBXNativeTarget "MuplayTests" */;
+			buildPhases = (
+				EBF327C22BE1D7B5007296FF /* Sources */,
+				EBF327C32BE1D7B5007296FF /* Frameworks */,
+				EBF327C42BE1D7B5007296FF /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				EBF327C82BE1D7B5007296FF /* PBXTargetDependency */,
+			);
+			name = MuplayTests;
+			productName = MuplayTests;
+			productReference = EBF327C62BE1D7B5007296FF /* MuplayTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		EBF327CF2BE1D7B5007296FF /* MuplayUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = EBF327E02BE1D7B5007296FF /* Build configuration list for PBXNativeTarget "MuplayUITests" */;
+			buildPhases = (
+				EBF327CC2BE1D7B5007296FF /* Sources */,
+				EBF327CD2BE1D7B5007296FF /* Frameworks */,
+				EBF327CE2BE1D7B5007296FF /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				EBF327D22BE1D7B5007296FF /* PBXTargetDependency */,
+			);
+			name = MuplayUITests;
+			productName = MuplayUITests;
+			productReference = EBF327D02BE1D7B5007296FF /* MuplayUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		EBF327AF2BE1D7B4007296FF /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1530;
+				LastUpgradeCheck = 1530;
+				TargetAttributes = {
+					EBF327B62BE1D7B4007296FF = {
+						CreatedOnToolsVersion = 15.3;
+					};
+					EBF327C52BE1D7B5007296FF = {
+						CreatedOnToolsVersion = 15.3;
+						TestTargetID = EBF327B62BE1D7B4007296FF;
+					};
+					EBF327CF2BE1D7B5007296FF = {
+						CreatedOnToolsVersion = 15.3;
+						TestTargetID = EBF327B62BE1D7B4007296FF;
+					};
+				};
+			};
+			buildConfigurationList = EBF327B22BE1D7B4007296FF /* Build configuration list for PBXProject "Muplay" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = EBF327AE2BE1D7B4007296FF;
+			productRefGroup = EBF327B82BE1D7B4007296FF /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				EBF327B62BE1D7B4007296FF /* Muplay */,
+				EBF327C52BE1D7B5007296FF /* MuplayTests */,
+				EBF327CF2BE1D7B5007296FF /* MuplayUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		EBF327B52BE1D7B4007296FF /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EBF327BD2BE1D7B5007296FF /* Assets.xcassets in Resources */,
+				EBF327C02BE1D7B5007296FF /* Base in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EBF327C42BE1D7B5007296FF /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EBF327CE2BE1D7B5007296FF /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		EBF327B32BE1D7B4007296FF /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EBF327BB2BE1D7B4007296FF /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EBF327C22BE1D7B5007296FF /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EBF327CB2BE1D7B5007296FF /* MuplayTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EBF327CC2BE1D7B5007296FF /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EBF327D72BE1D7B5007296FF /* MuplayUITestsLaunchTests.swift in Sources */,
+				EBF327D52BE1D7B5007296FF /* MuplayUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		EBF327C82BE1D7B5007296FF /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = EBF327B62BE1D7B4007296FF /* Muplay */;
+			targetProxy = EBF327C72BE1D7B5007296FF /* PBXContainerItemProxy */;
+		};
+		EBF327D22BE1D7B5007296FF /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = EBF327B62BE1D7B4007296FF /* Muplay */;
+			targetProxy = EBF327D12BE1D7B5007296FF /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		EBF327BE2BE1D7B5007296FF /* MainMenu.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				EBF327BF2BE1D7B5007296FF /* Base */,
+			);
+			name = MainMenu.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		EBF327D82BE1D7B5007296FF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MACOSX_DEPLOYMENT_TARGET = 14.4;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		EBF327D92BE1D7B5007296FF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MACOSX_DEPLOYMENT_TARGET = 14.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = macosx;
+				SWIFT_COMPILATION_MODE = wholemodule;
+			};
+			name = Release;
+		};
+		EBF327DB2BE1D7B5007296FF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = Muplay/Muplay.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = R2D4D7YLB2;
+				ENABLE_HARDENED_RUNTIME = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				INFOPLIST_KEY_NSMainNibFile = MainMenu;
+				INFOPLIST_KEY_NSPrincipalClass = NSApplication;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.dcd.Muplay;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		EBF327DC2BE1D7B5007296FF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = Muplay/Muplay.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = R2D4D7YLB2;
+				ENABLE_HARDENED_RUNTIME = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				INFOPLIST_KEY_NSMainNibFile = MainMenu;
+				INFOPLIST_KEY_NSPrincipalClass = NSApplication;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.dcd.Muplay;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+		EBF327DE2BE1D7B5007296FF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = R2D4D7YLB2;
+				GENERATE_INFOPLIST_FILE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 14.4;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.dcd.MuplayTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Muplay.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Muplay";
+			};
+			name = Debug;
+		};
+		EBF327DF2BE1D7B5007296FF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = R2D4D7YLB2;
+				GENERATE_INFOPLIST_FILE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 14.4;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.dcd.MuplayTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Muplay.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Muplay";
+			};
+			name = Release;
+		};
+		EBF327E12BE1D7B5007296FF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = R2D4D7YLB2;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.dcd.MuplayUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TEST_TARGET_NAME = Muplay;
+			};
+			name = Debug;
+		};
+		EBF327E22BE1D7B5007296FF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = R2D4D7YLB2;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.dcd.MuplayUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TEST_TARGET_NAME = Muplay;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		EBF327B22BE1D7B4007296FF /* Build configuration list for PBXProject "Muplay" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EBF327D82BE1D7B5007296FF /* Debug */,
+				EBF327D92BE1D7B5007296FF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		EBF327DA2BE1D7B5007296FF /* Build configuration list for PBXNativeTarget "Muplay" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EBF327DB2BE1D7B5007296FF /* Debug */,
+				EBF327DC2BE1D7B5007296FF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		EBF327DD2BE1D7B5007296FF /* Build configuration list for PBXNativeTarget "MuplayTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EBF327DE2BE1D7B5007296FF /* Debug */,
+				EBF327DF2BE1D7B5007296FF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		EBF327E02BE1D7B5007296FF /* Build configuration list for PBXNativeTarget "MuplayUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EBF327E12BE1D7B5007296FF /* Debug */,
+				EBF327E22BE1D7B5007296FF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = EBF327AF2BE1D7B4007296FF /* Project object */;
+}
