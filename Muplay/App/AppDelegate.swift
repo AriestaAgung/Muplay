@@ -14,6 +14,7 @@ class AppDelegate: NSObject, NSApplicationDelegate {
     private var windowController: BaseWindowController?
 
     func applicationDidFinishLaunching(_ aNotification: Notification) {
+        app.mainMenu = AppMenu()
         windowController = BaseWindowController(window: newWindow)
         windowController?.window?.center()
         windowController?.showWindow(self)

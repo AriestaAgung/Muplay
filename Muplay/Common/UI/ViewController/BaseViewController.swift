@@ -16,7 +16,7 @@ class BaseViewController: NSViewController {
     
     private func setupView() {
         view.wantsLayer = true
-        view.layer?.backgroundColor = NSColor.systemPink.cgColor
+        view.layer?.backgroundColor = NSColor.white.withAlphaComponent(0.2).cgColor
         view.layer?.cornerRadius = 20
     }
     

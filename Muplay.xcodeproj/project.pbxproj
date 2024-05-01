@@ -14,6 +14,9 @@
 		EB2F065A2BE222CD00D1CF1D /* HomeView.xib in Resources */ = {isa = PBXBuildFile; fileRef = EB2F06592BE222CD00D1CF1D /* HomeView.xib */; };
 		EB2F065B2BE222CD00D1CF1D /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB2F06582BE222CD00D1CF1D /* HomeView.swift */; };
 		EB2F065E2BE2297F00D1CF1D /* BaseWindowController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB2F065D2BE2297F00D1CF1D /* BaseWindowController.swift */; };
+		EB2F06632BE2551100D1CF1D /* Bundle+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB2F06622BE2551100D1CF1D /* Bundle+Extension.swift */; };
+		EB2F06672BE258C400D1CF1D /* AppMenu.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB2F06662BE258C400D1CF1D /* AppMenu.swift */; };
+		EB2F06692BE2595E00D1CF1D /* NSMenuItem+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB2F06682BE2595E00D1CF1D /* NSMenuItem+Extension.swift */; };
 		EBF327BB2BE1D7B4007296FF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBF327BA2BE1D7B4007296FF /* AppDelegate.swift */; };
 		EBF327BD2BE1D7B5007296FF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EBF327BC2BE1D7B5007296FF /* Assets.xcassets */; };
 		EBF327C02BE1D7B5007296FF /* Base in Resources */ = {isa = PBXBuildFile; fileRef = EBF327BF2BE1D7B5007296FF /* Base */; };
@@ -60,6 +63,9 @@
 		EB2F06582BE222CD00D1CF1D /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
 		EB2F06592BE222CD00D1CF1D /* HomeView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HomeView.xib; sourceTree = "<group>"; };
 		EB2F065D2BE2297F00D1CF1D /* BaseWindowController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseWindowController.swift; sourceTree = "<group>"; };
+		EB2F06622BE2551100D1CF1D /* Bundle+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Bundle+Extension.swift"; sourceTree = "<group>"; };
+		EB2F06662BE258C400D1CF1D /* AppMenu.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppMenu.swift; sourceTree = "<group>"; };
+		EB2F06682BE2595E00D1CF1D /* NSMenuItem+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "NSMenuItem+Extension.swift"; sourceTree = "<group>"; };
 		EBF327B72BE1D7B4007296FF /* Muplay.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Muplay.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		EBF327BA2BE1D7B4007296FF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		EBF327BC2BE1D7B5007296FF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -127,6 +133,14 @@
 				EB2F065D2BE2297F00D1CF1D /* BaseWindowController.swift */,
 			);
 			path = NSWindowController;
+			sourceTree = "<group>";
+		};
+		EB2F065F2BE252A700D1CF1D /* Menu */ = {
+			isa = PBXGroup;
+			children = (
+				EB2F06662BE258C400D1CF1D /* AppMenu.swift */,
+			);
+			path = Menu;
 			sourceTree = "<group>";
 		};
 		EBF327AE2BE1D7B4007296FF = {
@@ -219,6 +233,8 @@
 		EBF327E72BE1E08E007296FF /* Extensions */ = {
 			isa = PBXGroup;
 			children = (
+				EB2F06622BE2551100D1CF1D /* Bundle+Extension.swift */,
+				EB2F06682BE2595E00D1CF1D /* NSMenuItem+Extension.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -257,6 +273,7 @@
 		EBF327F92BE1E3D6007296FF /* UI */ = {
 			isa = PBXGroup;
 			children = (
+				EB2F065F2BE252A700D1CF1D /* Menu */,
 				EB2F065C2BE2296100D1CF1D /* NSWindowController */,
 				EBF327FD2BE1E937007296FF /* NSWindow */,
 				EBF327FA2BE1E3DC007296FF /* ViewController */,
@@ -533,6 +550,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				EBF328042BE1EF38007296FF /* main.swift in Sources */,
+				EB2F06632BE2551100D1CF1D /* Bundle+Extension.swift in Sources */,
+				EB2F06692BE2595E00D1CF1D /* NSMenuItem+Extension.swift in Sources */,
 				EBF327F12BE1E1C8007296FF /* HomePresenter.swift in Sources */,
 				EB2F06552BE2145400D1CF1D /* CommonConstant.swift in Sources */,
 				EBF327BB2BE1D7B4007296FF /* AppDelegate.swift in Sources */,
@@ -540,6 +559,7 @@
 				EB2F065E2BE2297F00D1CF1D /* BaseWindowController.swift in Sources */,
 				EBF327FF2BE1E95C007296FF /* BaseTransparentWindow.swift in Sources */,
 				EBF327F32BE1E1D4007296FF /* HomeContext.swift in Sources */,
+				EB2F06672BE258C400D1CF1D /* AppMenu.swift in Sources */,
 				EBF327F82BE1E344007296FF /* HomeProtocols.swift in Sources */,
 				EBF328062BE1F11F007296FF /* HomeConfigurator.swift in Sources */,
 				EB2F065B2BE222CD00D1CF1D /* HomeView.swift in Sources */,
