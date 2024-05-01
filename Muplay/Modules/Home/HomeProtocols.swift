@@ -7,12 +7,15 @@
 
 import Foundation
 
-protocol HomeViewDelegate {
-    
+protocol HomeViewDelegate: AnyObject {
+    var presenter: HomePresenterDelegate? { get set }
 }
 
-protocol HomePresenterDelegate {
-    
+protocol HomePresenterDelegate: AnyObject {
+    var interactor: HomeInteractorDelegate? { get set }
 }
 
+protocol HomeInteractorDelegate: AnyObject {
+    
+}
 

@@ -7,11 +7,15 @@
 
 import Cocoa
 
-class HomeView: NSViewController {
-
+class HomeView: BaseViewController, HomeViewDelegate {
+    var presenter: (any HomePresenterDelegate)?
+        
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do view setup here.
+        view.wantsLayer = true
+        view.layer?.cornerRadius = 20
+        view.layer?.backgroundColor = NSColor.systemPink.cgColor
+        
     }
     
 }

@@ -11,9 +11,14 @@ class BaseViewController: NSViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do view setup here.
+        setupView()
     }
     
-    
+    private func setupView() {
+        view.wantsLayer = true
+        view.layer?.backgroundColor = NSColor.orange.cgColor
+        view.layer?.cornerRadius = 20
+        view.translatesAutoresizingMaskIntoConstraints = false
+    }
     
 }

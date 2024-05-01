@@ -6,6 +6,7 @@
 //
 
 import Foundation
+
 class HomeContext {
-    
+    static let shared = HomeContext()
 }

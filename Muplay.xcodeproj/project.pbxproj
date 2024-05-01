@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2380EE2BCB1A9FA55FC01794 /* Pods_MuplayTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A708667B45A3DB4FFA4EA986 /* Pods_MuplayTests.framework */; };
+		5DDCA2BE3AA7C0C443011AE1 /* Pods_Muplay.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B784A8F565E15D34825EE30A /* Pods_Muplay.framework */; };
+		E13739826DF03A6FB8D8B1B1 /* Pods_Muplay_MuplayUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2EA2A0AC088DD19113E236CE /* Pods_Muplay_MuplayUITests.framework */; };
 		EBF327BB2BE1D7B4007296FF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBF327BA2BE1D7B4007296FF /* AppDelegate.swift */; };
 		EBF327BD2BE1D7B5007296FF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EBF327BC2BE1D7B5007296FF /* Assets.xcassets */; };
 		EBF327C02BE1D7B5007296FF /* Base in Resources */ = {isa = PBXBuildFile; fileRef = EBF327BF2BE1D7B5007296FF /* Base */; };
@@ -20,6 +23,10 @@
 		EBF327F62BE1E1EE007296FF /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBF327F52BE1E1EE007296FF /* NetworkManager.swift */; };
 		EBF327F82BE1E344007296FF /* HomeProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBF327F72BE1E344007296FF /* HomeProtocols.swift */; };
 		EBF327FC2BE1E3F1007296FF /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBF327FB2BE1E3F1007296FF /* BaseViewController.swift */; };
+		EBF327FF2BE1E95C007296FF /* BaseTransparentWindow.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBF327FE2BE1E95C007296FF /* BaseTransparentWindow.swift */; };
+		EBF328042BE1EF38007296FF /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBF328032BE1EF38007296FF /* main.swift */; };
+		EBF328062BE1F11F007296FF /* HomeConfigurator.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBF328052BE1F11F007296FF /* HomeConfigurator.swift */; };
+		EBF328082BE1F284007296FF /* HomeRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBF328072BE1F284007296FF /* HomeRouter.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,6 +47,13 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		0EFA2B12E3D2B6B333E24AD9 /* Pods-Muplay.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Muplay.release.xcconfig"; path = "Target Support Files/Pods-Muplay/Pods-Muplay.release.xcconfig"; sourceTree = "<group>"; };
+		2EA2A0AC088DD19113E236CE /* Pods_Muplay_MuplayUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Muplay_MuplayUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		43DFA2ECF0D1FA782AE9073B /* Pods-MuplayTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MuplayTests.debug.xcconfig"; path = "Target Support Files/Pods-MuplayTests/Pods-MuplayTests.debug.xcconfig"; sourceTree = "<group>"; };
+		856C15F54DCBE2F74A38CDCA /* Pods-MuplayTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MuplayTests.release.xcconfig"; path = "Target Support Files/Pods-MuplayTests/Pods-MuplayTests.release.xcconfig"; sourceTree = "<group>"; };
+		9D8DA882D16950A104E8E70F /* Pods-Muplay-MuplayUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Muplay-MuplayUITests.release.xcconfig"; path = "Target Support Files/Pods-Muplay-MuplayUITests/Pods-Muplay-MuplayUITests.release.xcconfig"; sourceTree = "<group>"; };
+		A708667B45A3DB4FFA4EA986 /* Pods_MuplayTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MuplayTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		B784A8F565E15D34825EE30A /* Pods_Muplay.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Muplay.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		EBF327B72BE1D7B4007296FF /* Muplay.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Muplay.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		EBF327BA2BE1D7B4007296FF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		EBF327BC2BE1D7B5007296FF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -57,6 +71,12 @@
 		EBF327F52BE1E1EE007296FF /* NetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
 		EBF327F72BE1E344007296FF /* HomeProtocols.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeProtocols.swift; sourceTree = "<group>"; };
 		EBF327FB2BE1E3F1007296FF /* BaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
+		EBF327FE2BE1E95C007296FF /* BaseTransparentWindow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseTransparentWindow.swift; sourceTree = "<group>"; };
+		EBF328032BE1EF38007296FF /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
+		EBF328052BE1F11F007296FF /* HomeConfigurator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeConfigurator.swift; sourceTree = "<group>"; };
+		EBF328072BE1F284007296FF /* HomeRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeRouter.swift; sourceTree = "<group>"; };
+		ED2C1B94F4A8EB3055DF5AD3 /* Pods-Muplay.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Muplay.debug.xcconfig"; path = "Target Support Files/Pods-Muplay/Pods-Muplay.debug.xcconfig"; sourceTree = "<group>"; };
+		EEA0F8DD5B41A4BD4F5F531E /* Pods-Muplay-MuplayUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Muplay-MuplayUITests.debug.xcconfig"; path = "Target Support Files/Pods-Muplay-MuplayUITests/Pods-Muplay-MuplayUITests.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -64,6 +84,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5DDCA2BE3AA7C0C443011AE1 /* Pods_Muplay.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -71,6 +92,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2380EE2BCB1A9FA55FC01794 /* Pods_MuplayTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -78,12 +100,23 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E13739826DF03A6FB8D8B1B1 /* Pods_Muplay_MuplayUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		83378943D2A04AE9A3D17441 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				B784A8F565E15D34825EE30A /* Pods_Muplay.framework */,
+				2EA2A0AC088DD19113E236CE /* Pods_Muplay_MuplayUITests.framework */,
+				A708667B45A3DB4FFA4EA986 /* Pods_MuplayTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		EBF327AE2BE1D7B4007296FF = {
 			isa = PBXGroup;
 			children = (
@@ -91,6 +124,8 @@
 				EBF327C92BE1D7B5007296FF /* MuplayTests */,
 				EBF327D32BE1D7B5007296FF /* MuplayUITests */,
 				EBF327B82BE1D7B4007296FF /* Products */,
+				FB3C52F602DE46A276E142B4 /* Pods */,
+				83378943D2A04AE9A3D17441 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -147,6 +182,7 @@
 				EBF327BC2BE1D7B5007296FF /* Assets.xcassets */,
 				EBF327BE2BE1D7B5007296FF /* MainMenu.xib */,
 				EBF327C12BE1D7B5007296FF /* Muplay.entitlements */,
+				EBF328032BE1EF38007296FF /* main.swift */,
 			);
 			path = App;
 			sourceTree = "<group>";
@@ -182,6 +218,8 @@
 				EBF327F02BE1E1C8007296FF /* HomePresenter.swift */,
 				EBF327F22BE1E1D4007296FF /* HomeContext.swift */,
 				EBF327F72BE1E344007296FF /* HomeProtocols.swift */,
+				EBF328052BE1F11F007296FF /* HomeConfigurator.swift */,
+				EBF328072BE1F284007296FF /* HomeRouter.swift */,
 			);
 			path = Home;
 			sourceTree = "<group>";
@@ -206,6 +244,7 @@
 		EBF327F92BE1E3D6007296FF /* UI */ = {
 			isa = PBXGroup;
 			children = (
+				EBF327FD2BE1E937007296FF /* NSWindow */,
 				EBF327FA2BE1E3DC007296FF /* ViewController */,
 			);
 			path = UI;
@@ -219,6 +258,28 @@
 			path = ViewController;
 			sourceTree = "<group>";
 		};
+		EBF327FD2BE1E937007296FF /* NSWindow */ = {
+			isa = PBXGroup;
+			children = (
+				EBF327FE2BE1E95C007296FF /* BaseTransparentWindow.swift */,
+			);
+			path = NSWindow;
+			sourceTree = "<group>";
+		};
+		FB3C52F602DE46A276E142B4 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				ED2C1B94F4A8EB3055DF5AD3 /* Pods-Muplay.debug.xcconfig */,
+				0EFA2B12E3D2B6B333E24AD9 /* Pods-Muplay.release.xcconfig */,
+				EEA0F8DD5B41A4BD4F5F531E /* Pods-Muplay-MuplayUITests.debug.xcconfig */,
+				9D8DA882D16950A104E8E70F /* Pods-Muplay-MuplayUITests.release.xcconfig */,
+				43DFA2ECF0D1FA782AE9073B /* Pods-MuplayTests.debug.xcconfig */,
+				856C15F54DCBE2F74A38CDCA /* Pods-MuplayTests.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -226,9 +287,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = EBF327DA2BE1D7B5007296FF /* Build configuration list for PBXNativeTarget "Muplay" */;
 			buildPhases = (
+				01ECECCB621FE0C94433174D /* [CP] Check Pods Manifest.lock */,
 				EBF327B32BE1D7B4007296FF /* Sources */,
 				EBF327B42BE1D7B4007296FF /* Frameworks */,
 				EBF327B52BE1D7B4007296FF /* Resources */,
+				3FD4FE55C94B982017892B54 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -243,6 +306,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = EBF327DD2BE1D7B5007296FF /* Build configuration list for PBXNativeTarget "MuplayTests" */;
 			buildPhases = (
+				C944F24D29568E34AD3A49B8 /* [CP] Check Pods Manifest.lock */,
 				EBF327C22BE1D7B5007296FF /* Sources */,
 				EBF327C32BE1D7B5007296FF /* Frameworks */,
 				EBF327C42BE1D7B5007296FF /* Resources */,
@@ -261,9 +325,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = EBF327E02BE1D7B5007296FF /* Build configuration list for PBXNativeTarget "MuplayUITests" */;
 			buildPhases = (
+				F8F1E763D3A913E3AF04BC00 /* [CP] Check Pods Manifest.lock */,
 				EBF327CC2BE1D7B5007296FF /* Sources */,
 				EBF327CD2BE1D7B5007296FF /* Frameworks */,
 				EBF327CE2BE1D7B5007296FF /* Resources */,
+				4550708F42D9F1A803C33DD6 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -345,18 +411,125 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		01ECECCB621FE0C94433174D /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Muplay-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		3FD4FE55C94B982017892B54 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Muplay/Pods-Muplay-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Muplay/Pods-Muplay-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Muplay/Pods-Muplay-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		4550708F42D9F1A803C33DD6 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Muplay-MuplayUITests/Pods-Muplay-MuplayUITests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Muplay-MuplayUITests/Pods-Muplay-MuplayUITests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Muplay-MuplayUITests/Pods-Muplay-MuplayUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C944F24D29568E34AD3A49B8 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-MuplayTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F8F1E763D3A913E3AF04BC00 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Muplay-MuplayUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		EBF327B32BE1D7B4007296FF /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EBF328042BE1EF38007296FF /* main.swift in Sources */,
 				EBF327F12BE1E1C8007296FF /* HomePresenter.swift in Sources */,
 				EBF327BB2BE1D7B4007296FF /* AppDelegate.swift in Sources */,
 				EBF327F62BE1E1EE007296FF /* NetworkManager.swift in Sources */,
+				EBF327FF2BE1E95C007296FF /* BaseTransparentWindow.swift in Sources */,
 				EBF327F32BE1E1D4007296FF /* HomeContext.swift in Sources */,
 				EBF327F82BE1E344007296FF /* HomeProtocols.swift in Sources */,
+				EBF328062BE1F11F007296FF /* HomeConfigurator.swift in Sources */,
 				EBF327FC2BE1E3F1007296FF /* BaseViewController.swift in Sources */,
 				EBF327ED2BE1E1AF007296FF /* HomeView.swift in Sources */,
+				EBF328082BE1F284007296FF /* HomeRouter.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -524,6 +697,7 @@
 		};
 		EBF327DB2BE1D7B5007296FF /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = ED2C1B94F4A8EB3055DF5AD3 /* Pods-Muplay.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -536,7 +710,6 @@
 				ENABLE_HARDENED_RUNTIME = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_NSHumanReadableCopyright = "";
-				INFOPLIST_KEY_NSMainNibFile = MainMenu;
 				INFOPLIST_KEY_NSPrincipalClass = NSApplication;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -553,6 +726,7 @@
 		};
 		EBF327DC2BE1D7B5007296FF /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0EFA2B12E3D2B6B333E24AD9 /* Pods-Muplay.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -565,7 +739,6 @@
 				ENABLE_HARDENED_RUNTIME = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_NSHumanReadableCopyright = "";
-				INFOPLIST_KEY_NSMainNibFile = MainMenu;
 				INFOPLIST_KEY_NSPrincipalClass = NSApplication;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -582,6 +755,7 @@
 		};
 		EBF327DE2BE1D7B5007296FF /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 43DFA2ECF0D1FA782AE9073B /* Pods-MuplayTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -601,6 +775,7 @@
 		};
 		EBF327DF2BE1D7B5007296FF /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 856C15F54DCBE2F74A38CDCA /* Pods-MuplayTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -620,6 +795,7 @@
 		};
 		EBF327E12BE1D7B5007296FF /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = EEA0F8DD5B41A4BD4F5F531E /* Pods-Muplay-MuplayUITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -637,6 +813,7 @@
 		};
 		EBF327E22BE1D7B5007296FF /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9D8DA882D16950A104E8E70F /* Pods-Muplay-MuplayUITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
