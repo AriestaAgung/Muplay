@@ -6,15 +6,18 @@
 //
 
 import Cocoa
+import AppKit
 
-@main
 class AppDelegate: NSObject, NSApplicationDelegate {
 
-    @IBOutlet var window: NSWindow!
-
+    private let newWindow = BaseTransparentWindow(windowTitle: .emptyString, HomeConfigurator.shared.createHomeModule())
+    private var windowController: BaseWindowController?
 
     func applicationDidFinishLaunching(_ aNotification: Notification) {
-        // Insert code here to initialize your application
+        app.mainMenu = AppMenu()
+        windowController = BaseWindowController(window: newWindow)
+        windowController?.window?.center()
+        windowController?.showWindow(self)
     }
 
     func applicationWillTerminate(_ aNotification: Notification) {
