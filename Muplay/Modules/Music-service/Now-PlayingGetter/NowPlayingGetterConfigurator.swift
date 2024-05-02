@@ -7,13 +7,15 @@
 
 import Foundation
 class NowPlayingGetterConfigurator {
-    static let shared = HomeConfigurator()
-    private var context = HomeContext()
+    static let shared = NowPlayingGetterConfigurator()
+    private var context = NowPlayingGetterContext()
 }
 
 extension NowPlayingGetterConfigurator {
-    func createNowPlayingModule() {
+    func createNowPlayingModule() -> NowPlayingGetterPresenter {
         let interactor: NowPlayingGetterInteractorDelegate = NowPlayingGetterInteractor.shared
-        
+        let presenter: NowPlayingGetterPresenterDelegate = NowPlayingGetterPresenter.shared
+        presenter.interactor = interactor
+        return presenter as! NowPlayingGetterPresenter
     }
 }

@@ -9,8 +9,9 @@ import Foundation
 
 protocol NowPlayingGetterPresenterDelegate: AnyObject {
     var interactor: NowPlayingGetterInteractorDelegate? { get set }
+    func setTrackObserver(action: Selector)
 }
 
 protocol NowPlayingGetterInteractorDelegate: AnyObject {
-    func getCurrentSong() -> MediaRemoteTrackInfo
+    func setTrackObserver(action: Selector)
 }

@@ -21,7 +21,7 @@ class MediaRemoteHelper {
     
     let encoder: JSONEncoder = JSONEncoder()
     
-    init() {
+    func run() {
         self.encoder.outputFormatting = .sortedKeys
         self.printNowPlayingInfo()
         self.registerNotificationObservers()
@@ -107,10 +107,10 @@ class MediaRemoteHelper {
                         fflush(stdout)
                         self.prevTrackInfo = trackInfo
                     }
+                    self.postTrackObject = [MediaRemoteConstant.Notification.postTrackName:self.currentTrackInfo]
+                    NotificationCenter.default.post(name: MediaRemoteConstant.Notification.musicChangedNotification, object: nil, userInfo: self.postTrackObject)
                 }
             )
-            self.postTrackObject = [MediaRemoteConstant.Notification.postTrackName:self.currentTrackInfo]
-            NotificationCenter.default.post(name: MediaRemoteConstant.Notification.musicChangedNotification, object: nil, userInfo: self.postTrackObject)
         }
     }
     func getCurrentTrackInfo() -> MediaRemoteTrackInfo? {

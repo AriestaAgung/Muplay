@@ -9,6 +9,7 @@
     <objects>
         <customObject id="-2" userLabel="File's Owner" customClass="HomeView" customModule="Muplay" customModuleProvider="target">
             <connections>
+                <outlet property="titleLabel" destination="cDy-qF-2hk" id="DHF-VA-njt"/>
                 <outlet property="view" destination="Hz6-mo-xeY" id="0bl-1N-x8E"/>
             </connections>
         </customObject>

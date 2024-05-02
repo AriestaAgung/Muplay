@@ -9,12 +9,18 @@ import Cocoa
 
 class HomeView: BaseViewController, HomeViewDelegate {
     var presenter: (any HomePresenterDelegate)?
-        
+    @IBOutlet weak var titleLabel: NSTextField!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        
-        NowPlayingGetterInteractor().getCurrentSong()
-        
+        presenter?.viewDidLoad()
+    }
+    
+    func setupTrackInfo(track: MediaRemoteTrackInfo) {
+        self.titleLabel.stringValue = track.name ?? .emptyString
     }
     
 }
+
+
+
