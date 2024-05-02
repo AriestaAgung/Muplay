@@ -12,6 +12,9 @@ class HomeView: BaseViewController, HomeViewDelegate {
         
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        NowPlayingGetterInteractor().getCurrentSong()
+        
     }
     
 }

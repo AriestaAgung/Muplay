@@ -1,13 +1,13 @@
 //
-//  BaseTransparentWindow.swift
+//  BasePanel.swift
 //  Muplay
 //
-//  Created by Ariesta APP on 01/05/24.
+//  Created by Ariesta APP on 02/05/24.
 //
 
 import Cocoa
 import AppKit
-class BaseTransparentWindow: NSWindow {
+class BasePanel: NSPanel {
     init(windowTitle: CommonConstant, _ view: NSViewController) {
         super.init(
             contentRect: NSMakeRect(0, 0,  NSScreen.main!.frame.width/2, NSScreen.main!.frame.height/2),
@@ -31,6 +31,4 @@ class BaseTransparentWindow: NSWindow {
         orderFrontRegardless()
         level = .mainMenu
     }
-    
 }
-
