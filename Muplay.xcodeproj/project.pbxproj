@@ -19,14 +19,9 @@
 		EB2F06632BE2551100D1CF1D /* Bundle+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB2F06622BE2551100D1CF1D /* Bundle+Extension.swift */; };
 		EB2F06672BE258C400D1CF1D /* AppMenu.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB2F06662BE258C400D1CF1D /* AppMenu.swift */; };
 		EB2F06692BE2595E00D1CF1D /* NSMenuItem+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB2F06682BE2595E00D1CF1D /* NSMenuItem+Extension.swift */; };
-		EB2F066D2BE25CD800D1CF1D /* NowPlayingGetterInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB2F066C2BE25CD800D1CF1D /* NowPlayingGetterInteractor.swift */; };
-		EB2F066F2BE25CED00D1CF1D /* NowPlayingGetterPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB2F066E2BE25CED00D1CF1D /* NowPlayingGetterPresenter.swift */; };
-		EB2F06712BE25CFE00D1CF1D /* NowPlayingGetterProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB2F06702BE25CFE00D1CF1D /* NowPlayingGetterProtocols.swift */; };
-		EB2F06732BE25D0A00D1CF1D /* NowPlayingGetterContext.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB2F06722BE25D0A00D1CF1D /* NowPlayingGetterContext.swift */; };
 		EB2F06762BE266A500D1CF1D /* MediaRemoteHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB2F06752BE266A500D1CF1D /* MediaRemoteHelper.swift */; };
 		EB2F06782BE2671600D1CF1D /* MediaRemoteTrackInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB2F06772BE2671600D1CF1D /* MediaRemoteTrackInfo.swift */; };
 		EB2F067B2BE2745800D1CF1D /* MediaRemoteConstant.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB2F067A2BE2745800D1CF1D /* MediaRemoteConstant.swift */; };
-		EBB848162BE33394000CD60C /* NowPlayingGetterConfigurator.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBB848152BE33394000CD60C /* NowPlayingGetterConfigurator.swift */; };
 		EBB848192BE33E3F000CD60C /* BasePanel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBB848182BE33E3F000CD60C /* BasePanel.swift */; };
 		EBF327BB2BE1D7B4007296FF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBF327BA2BE1D7B4007296FF /* AppDelegate.swift */; };
 		EBF327BD2BE1D7B5007296FF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EBF327BC2BE1D7B5007296FF /* Assets.xcassets */; };
@@ -79,14 +74,9 @@
 		EB2F06622BE2551100D1CF1D /* Bundle+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Bundle+Extension.swift"; sourceTree = "<group>"; };
 		EB2F06662BE258C400D1CF1D /* AppMenu.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppMenu.swift; sourceTree = "<group>"; };
 		EB2F06682BE2595E00D1CF1D /* NSMenuItem+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "NSMenuItem+Extension.swift"; sourceTree = "<group>"; };
-		EB2F066C2BE25CD800D1CF1D /* NowPlayingGetterInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NowPlayingGetterInteractor.swift; sourceTree = "<group>"; };
-		EB2F066E2BE25CED00D1CF1D /* NowPlayingGetterPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NowPlayingGetterPresenter.swift; sourceTree = "<group>"; };
-		EB2F06702BE25CFE00D1CF1D /* NowPlayingGetterProtocols.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NowPlayingGetterProtocols.swift; sourceTree = "<group>"; };
-		EB2F06722BE25D0A00D1CF1D /* NowPlayingGetterContext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NowPlayingGetterContext.swift; sourceTree = "<group>"; };
 		EB2F06752BE266A500D1CF1D /* MediaRemoteHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MediaRemoteHelper.swift; sourceTree = "<group>"; };
 		EB2F06772BE2671600D1CF1D /* MediaRemoteTrackInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MediaRemoteTrackInfo.swift; sourceTree = "<group>"; };
 		EB2F067A2BE2745800D1CF1D /* MediaRemoteConstant.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MediaRemoteConstant.swift; sourceTree = "<group>"; };
-		EBB848152BE33394000CD60C /* NowPlayingGetterConfigurator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NowPlayingGetterConfigurator.swift; sourceTree = "<group>"; };
 		EBB848182BE33E3F000CD60C /* BasePanel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BasePanel.swift; sourceTree = "<group>"; };
 		EBF327B72BE1D7B4007296FF /* Muplay.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Muplay.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		EBF327BA2BE1D7B4007296FF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -169,21 +159,8 @@
 			isa = PBXGroup;
 			children = (
 				EB2F06742BE2668900D1CF1D /* Helper */,
-				EB2F066B2BE25C9200D1CF1D /* Now-PlayingGetter */,
 			);
 			path = "Music-service";
-			sourceTree = "<group>";
-		};
-		EB2F066B2BE25C9200D1CF1D /* Now-PlayingGetter */ = {
-			isa = PBXGroup;
-			children = (
-				EB2F066C2BE25CD800D1CF1D /* NowPlayingGetterInteractor.swift */,
-				EB2F066E2BE25CED00D1CF1D /* NowPlayingGetterPresenter.swift */,
-				EB2F06702BE25CFE00D1CF1D /* NowPlayingGetterProtocols.swift */,
-				EB2F06722BE25D0A00D1CF1D /* NowPlayingGetterContext.swift */,
-				EBB848152BE33394000CD60C /* NowPlayingGetterConfigurator.swift */,
-			);
-			path = "Now-PlayingGetter";
 			sourceTree = "<group>";
 		};
 		EB2F06742BE2668900D1CF1D /* Helper */ = {
@@ -626,8 +603,6 @@
 				EB2F06632BE2551100D1CF1D /* Bundle+Extension.swift in Sources */,
 				EB2F06762BE266A500D1CF1D /* MediaRemoteHelper.swift in Sources */,
 				EB2F06692BE2595E00D1CF1D /* NSMenuItem+Extension.swift in Sources */,
-				EB2F066D2BE25CD800D1CF1D /* NowPlayingGetterInteractor.swift in Sources */,
-				EB2F06732BE25D0A00D1CF1D /* NowPlayingGetterContext.swift in Sources */,
 				EB033E7D2BE3DB3E001C945A /* HomeInteractor.swift in Sources */,
 				EB033E7B2BE3D33F001C945A /* String+Extension.swift in Sources */,
 				EBF327F12BE1E1C8007296FF /* HomePresenter.swift in Sources */,
@@ -635,12 +610,9 @@
 				EBF327BB2BE1D7B4007296FF /* AppDelegate.swift in Sources */,
 				EBF327F62BE1E1EE007296FF /* NetworkManager.swift in Sources */,
 				EB2F065E2BE2297F00D1CF1D /* BaseWindowController.swift in Sources */,
-				EB2F06712BE25CFE00D1CF1D /* NowPlayingGetterProtocols.swift in Sources */,
-				EB2F066F2BE25CED00D1CF1D /* NowPlayingGetterPresenter.swift in Sources */,
 				EBF327FF2BE1E95C007296FF /* BaseTransparentWindow.swift in Sources */,
 				EBB848192BE33E3F000CD60C /* BasePanel.swift in Sources */,
 				EBF327F32BE1E1D4007296FF /* HomeContext.swift in Sources */,
-				EBB848162BE33394000CD60C /* NowPlayingGetterConfigurator.swift in Sources */,
 				EB2F06672BE258C400D1CF1D /* AppMenu.swift in Sources */,
 				EBF327F82BE1E344007296FF /* HomeProtocols.swift in Sources */,
 				EBF328062BE1F11F007296FF /* HomeConfigurator.swift in Sources */,
