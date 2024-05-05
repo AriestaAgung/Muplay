@@ -83,9 +83,12 @@ class MediaRemoteHelper {
             MRMediaRemoteGetNowPlayingInfo(
                 DispatchQueue.main,
                 { (information) in
+                    dump(information)
                     var name: String?
                     var artist: String?
                     var playbackRate = 0.0
+                    var artwork: Data?
+                    var elapsedTime: Double?
                     
                     if information["kMRMediaRemoteNowPlayingInfoArtist"] != nil {
                         if let info = information["kMRMediaRemoteNowPlayingInfoArtist"] as? String {
@@ -97,9 +100,21 @@ class MediaRemoteHelper {
                         if let info = information["kMRMediaRemoteNowPlayingInfoPlaybackRate"] as? Double {
                             playbackRate = info
                         }
+                        if let info = information["kMRMediaRemoteNowPlayingInfoArtworkData"] as? Data {
+                            artwork = info
+                        }
+                        if let info = information["kMRMediaRemoteNowPlayingInfoElapsedTime"] as? Double {
+                            elapsedTime = info
+                        }
                     }
                     
-                    let trackInfo = MediaRemoteTrackInfo(name: name, artist: artist, playing: playbackRate != 0.0)
+                    let trackInfo = MediaRemoteTrackInfo(
+                        name: name,
+                        artist: artist,
+                        artwork: artwork,
+                        elapsedTime: elapsedTime,
+                        playing: playbackRate != 0.0
+                    )
                     
                     if trackInfo != self.prevTrackInfo {
                         print(self.serializeTrackInfo(trackInfo))

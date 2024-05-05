@@ -10,21 +10,32 @@ import Cocoa
 class HomeView: BaseViewController, HomeViewDelegate {
     var presenter: (any HomePresenterDelegate)?
     @IBOutlet weak var titleLabel: NSTextField!
+    @IBOutlet weak var artworkImage: NSImageView!
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        setupView()
         presenter?.viewDidLoad()
-        setupBackgroundColor(color: .black)
     }
     
     
     func setupView() {
-//        bgColor = .clear
-        titleLabel.delegate = self
+        titleLabel.stringValue = "Loading Song..."
+        setupBackgroundColor(color: NSColor.windowBackgroundColor.withAlphaComponent(0.3).cgColor)
     }
     
     func setupTrackInfo(track: MediaRemoteTrackInfo) {
-        self.titleLabel.stringValue = track.name ?? .emptyString
+        print("TRACKINFO: \(track)")
+        
+        if track.name == nil {
+            self.titleLabel.stringValue = "fetch track..."
+        } else  if track.name == .emptyString {
+            self.titleLabel.stringValue = "Cannot fetch track..."
+        } else {
+            self.titleLabel.stringValue = track.name ?? "fetch track..."
+            self.artworkImage.image = NSImage(data: track.artwork ?? Data())
+        }
+        
         self.titleLabel.font = .boldSystemFont(ofSize: 20)
     }
     

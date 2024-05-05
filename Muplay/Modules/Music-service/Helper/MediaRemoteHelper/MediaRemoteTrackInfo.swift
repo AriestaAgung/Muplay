@@ -8,7 +8,9 @@
 import Foundation
 
 struct MediaRemoteTrackInfo: Codable, Equatable {
-  let name: String?
-  let artist: String?
-  let playing: Bool
+    let name: String?
+    let artist: String?
+    let artwork: Data?
+    let elapsedTime: Double?
+    let playing: Bool
 }
