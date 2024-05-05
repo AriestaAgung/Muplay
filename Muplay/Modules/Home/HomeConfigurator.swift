@@ -16,6 +16,11 @@ class HomeConfigurator {
 extension HomeConfigurator {
     func createHomeModule() -> NSViewController {
         let view: HomeView & HomeViewDelegate = HomeView()
+        let presenter = HomePresenter()
+        let interactor = HomeInteractor()
+        view.presenter = presenter
+        presenter.interactor = interactor
+        presenter.view = view
         return view
     }
 }
