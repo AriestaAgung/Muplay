@@ -22,6 +22,7 @@
 		EB2F06762BE266A500D1CF1D /* MediaRemoteHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB2F06752BE266A500D1CF1D /* MediaRemoteHelper.swift */; };
 		EB2F06782BE2671600D1CF1D /* MediaRemoteTrackInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB2F06772BE2671600D1CF1D /* MediaRemoteTrackInfo.swift */; };
 		EB2F067B2BE2745800D1CF1D /* MediaRemoteConstant.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB2F067A2BE2745800D1CF1D /* MediaRemoteConstant.swift */; };
+		EBA046692BE7C2E000B9D1F8 /* LyricsExtractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBA046682BE7C2E000B9D1F8 /* LyricsExtractor.swift */; };
 		EBB848192BE33E3F000CD60C /* BasePanel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBB848182BE33E3F000CD60C /* BasePanel.swift */; };
 		EBF327BB2BE1D7B4007296FF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBF327BA2BE1D7B4007296FF /* AppDelegate.swift */; };
 		EBF327BD2BE1D7B5007296FF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EBF327BC2BE1D7B5007296FF /* Assets.xcassets */; };
@@ -77,6 +78,7 @@
 		EB2F06752BE266A500D1CF1D /* MediaRemoteHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MediaRemoteHelper.swift; sourceTree = "<group>"; };
 		EB2F06772BE2671600D1CF1D /* MediaRemoteTrackInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MediaRemoteTrackInfo.swift; sourceTree = "<group>"; };
 		EB2F067A2BE2745800D1CF1D /* MediaRemoteConstant.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MediaRemoteConstant.swift; sourceTree = "<group>"; };
+		EBA046682BE7C2E000B9D1F8 /* LyricsExtractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LyricsExtractor.swift; sourceTree = "<group>"; };
 		EBB848182BE33E3F000CD60C /* BasePanel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BasePanel.swift; sourceTree = "<group>"; };
 		EBF327B72BE1D7B4007296FF /* Muplay.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Muplay.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		EBF327BA2BE1D7B4007296FF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -315,6 +317,7 @@
 			children = (
 				EBF327F52BE1E1EE007296FF /* NetworkManager.swift */,
 				EB2F06542BE2145400D1CF1D /* CommonConstant.swift */,
+				EBA046682BE7C2E000B9D1F8 /* LyricsExtractor.swift */,
 			);
 			path = Utils;
 			sourceTree = "<group>";
@@ -614,6 +617,7 @@
 				EBB848192BE33E3F000CD60C /* BasePanel.swift in Sources */,
 				EBF327F32BE1E1D4007296FF /* HomeContext.swift in Sources */,
 				EB2F06672BE258C400D1CF1D /* AppMenu.swift in Sources */,
+				EBA046692BE7C2E000B9D1F8 /* LyricsExtractor.swift in Sources */,
 				EBF327F82BE1E344007296FF /* HomeProtocols.swift in Sources */,
 				EBF328062BE1F11F007296FF /* HomeConfigurator.swift in Sources */,
 				EB2F06782BE2671600D1CF1D /* MediaRemoteTrackInfo.swift in Sources */,
