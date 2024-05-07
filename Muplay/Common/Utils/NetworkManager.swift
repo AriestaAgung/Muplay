@@ -13,11 +13,16 @@ enum Endpoint: String {
     
 }
 
+enum LocalHTTPMethod: String {
+    case get = "GET"
+    case post = "POST"
+}
+
 class NetworkManager {
     static let shared = NetworkManager()
     private let BASE_URL = "https://youtube-music4.p.rapidapi.com/"
     
-    func get<T: Codable, U: Codable>(_ endpoint: Endpoint, method: String = "GET", request: T, responseType: U.Type, completion: @escaping ((U?, Error?) -> Void)) {
+    func get<T: Codable, U: Codable>(_ endpoint: Endpoint, method: LocalHTTPMethod, request: T, responseType: U.Type, completion: @escaping ((U?, Error?) -> Void)) {
         let config = URLSessionConfiguration.default
         config.httpAdditionalHeaders = [
             "content-type": "application/json",
@@ -30,7 +35,7 @@ class NetworkManager {
         print("PRINTURL: \(url.absoluteString)")
         do {
             var urlRequest = URLRequest(url: url)
-            urlRequest.httpMethod = method
+            urlRequest.httpMethod = method.rawValue
             
             urlRequest.httpBody = try JSONEncoder().encode(request)
             session.dataTask(with: urlRequest) { (data, response, error) in
@@ -40,7 +45,6 @@ class NetworkManager {
                         return
                     }
                     do {
-                        dump(response as? HTTPURLResponse)
                         let decoder = try JSONDecoder().decode(responseType, from: data)
                         completion(decoder, error)
                     } catch (let e) {
