@@ -22,6 +22,11 @@
 		EB2F06762BE266A500D1CF1D /* MediaRemoteHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB2F06752BE266A500D1CF1D /* MediaRemoteHelper.swift */; };
 		EB2F06782BE2671600D1CF1D /* MediaRemoteTrackInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB2F06772BE2671600D1CF1D /* MediaRemoteTrackInfo.swift */; };
 		EB2F067B2BE2745800D1CF1D /* MediaRemoteConstant.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB2F067A2BE2745800D1CF1D /* MediaRemoteConstant.swift */; };
+		EBA046692BE7C2E000B9D1F8 /* LyricsExtractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBA046682BE7C2E000B9D1F8 /* LyricsExtractor.swift */; };
+		EBA0466C2BE7D4D500B9D1F8 /* OnlineMusicSearch.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBA0466B2BE7D4D500B9D1F8 /* OnlineMusicSearch.swift */; };
+		EBA0466E2BE7DBA100B9D1F8 /* MusicFetcherInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBA0466D2BE7DBA100B9D1F8 /* MusicFetcherInteractor.swift */; };
+		EBA046702BE7DCCC00B9D1F8 /* MusicFetcherRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBA0466F2BE7DCCC00B9D1F8 /* MusicFetcherRequest.swift */; };
+		EBA046722BE7E96500B9D1F8 /* OnlineLyricSearch.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBA046712BE7E96500B9D1F8 /* OnlineLyricSearch.swift */; };
 		EBB848192BE33E3F000CD60C /* BasePanel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBB848182BE33E3F000CD60C /* BasePanel.swift */; };
 		EBF327BB2BE1D7B4007296FF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBF327BA2BE1D7B4007296FF /* AppDelegate.swift */; };
 		EBF327BD2BE1D7B5007296FF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EBF327BC2BE1D7B5007296FF /* Assets.xcassets */; };
@@ -77,6 +82,11 @@
 		EB2F06752BE266A500D1CF1D /* MediaRemoteHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MediaRemoteHelper.swift; sourceTree = "<group>"; };
 		EB2F06772BE2671600D1CF1D /* MediaRemoteTrackInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MediaRemoteTrackInfo.swift; sourceTree = "<group>"; };
 		EB2F067A2BE2745800D1CF1D /* MediaRemoteConstant.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MediaRemoteConstant.swift; sourceTree = "<group>"; };
+		EBA046682BE7C2E000B9D1F8 /* LyricsExtractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LyricsExtractor.swift; sourceTree = "<group>"; };
+		EBA0466B2BE7D4D500B9D1F8 /* OnlineMusicSearch.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnlineMusicSearch.swift; sourceTree = "<group>"; };
+		EBA0466D2BE7DBA100B9D1F8 /* MusicFetcherInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MusicFetcherInteractor.swift; sourceTree = "<group>"; };
+		EBA0466F2BE7DCCC00B9D1F8 /* MusicFetcherRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MusicFetcherRequest.swift; sourceTree = "<group>"; };
+		EBA046712BE7E96500B9D1F8 /* OnlineLyricSearch.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnlineLyricSearch.swift; sourceTree = "<group>"; };
 		EBB848182BE33E3F000CD60C /* BasePanel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BasePanel.swift; sourceTree = "<group>"; };
 		EBF327B72BE1D7B4007296FF /* Muplay.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Muplay.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		EBF327BA2BE1D7B4007296FF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -158,6 +168,7 @@
 		EB2F066A2BE25C4200D1CF1D /* Music-service */ = {
 			isa = PBXGroup;
 			children = (
+				EBA0466A2BE7D4BD00B9D1F8 /* MusicFetcher */,
 				EB2F06742BE2668900D1CF1D /* Helper */,
 			);
 			path = "Music-service";
@@ -179,6 +190,17 @@
 				EB2F067A2BE2745800D1CF1D /* MediaRemoteConstant.swift */,
 			);
 			path = MediaRemoteHelper;
+			sourceTree = "<group>";
+		};
+		EBA0466A2BE7D4BD00B9D1F8 /* MusicFetcher */ = {
+			isa = PBXGroup;
+			children = (
+				EBA0466B2BE7D4D500B9D1F8 /* OnlineMusicSearch.swift */,
+				EBA0466D2BE7DBA100B9D1F8 /* MusicFetcherInteractor.swift */,
+				EBA0466F2BE7DCCC00B9D1F8 /* MusicFetcherRequest.swift */,
+				EBA046712BE7E96500B9D1F8 /* OnlineLyricSearch.swift */,
+			);
+			path = MusicFetcher;
 			sourceTree = "<group>";
 		};
 		EBB848172BE33E2B000CD60C /* NSPanel */ = {
@@ -315,6 +337,7 @@
 			children = (
 				EBF327F52BE1E1EE007296FF /* NetworkManager.swift */,
 				EB2F06542BE2145400D1CF1D /* CommonConstant.swift */,
+				EBA046682BE7C2E000B9D1F8 /* LyricsExtractor.swift */,
 			);
 			path = Utils;
 			sourceTree = "<group>";
@@ -602,6 +625,7 @@
 				EBF328042BE1EF38007296FF /* main.swift in Sources */,
 				EB2F06632BE2551100D1CF1D /* Bundle+Extension.swift in Sources */,
 				EB2F06762BE266A500D1CF1D /* MediaRemoteHelper.swift in Sources */,
+				EBA0466E2BE7DBA100B9D1F8 /* MusicFetcherInteractor.swift in Sources */,
 				EB2F06692BE2595E00D1CF1D /* NSMenuItem+Extension.swift in Sources */,
 				EB033E7D2BE3DB3E001C945A /* HomeInteractor.swift in Sources */,
 				EB033E7B2BE3D33F001C945A /* String+Extension.swift in Sources */,
@@ -613,10 +637,14 @@
 				EBF327FF2BE1E95C007296FF /* BaseTransparentWindow.swift in Sources */,
 				EBB848192BE33E3F000CD60C /* BasePanel.swift in Sources */,
 				EBF327F32BE1E1D4007296FF /* HomeContext.swift in Sources */,
+				EBA0466C2BE7D4D500B9D1F8 /* OnlineMusicSearch.swift in Sources */,
 				EB2F06672BE258C400D1CF1D /* AppMenu.swift in Sources */,
+				EBA046692BE7C2E000B9D1F8 /* LyricsExtractor.swift in Sources */,
 				EBF327F82BE1E344007296FF /* HomeProtocols.swift in Sources */,
 				EBF328062BE1F11F007296FF /* HomeConfigurator.swift in Sources */,
 				EB2F06782BE2671600D1CF1D /* MediaRemoteTrackInfo.swift in Sources */,
+				EBA046702BE7DCCC00B9D1F8 /* MusicFetcherRequest.swift in Sources */,
+				EBA046722BE7E96500B9D1F8 /* OnlineLyricSearch.swift in Sources */,
 				EB2F065B2BE222CD00D1CF1D /* HomeView.swift in Sources */,
 				EB2F067B2BE2745800D1CF1D /* MediaRemoteConstant.swift in Sources */,
 				EBF327FC2BE1E3F1007296FF /* BaseViewController.swift in Sources */,

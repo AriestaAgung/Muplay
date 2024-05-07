@@ -7,6 +7,7 @@ target 'Muplay' do
 
   # Pods for Muplay
   pod 'SnapKit', '~> 5.7.0'
+  pod 'Alamofire', '5.9.1'
 
   target 'MuplayTests' do
     inherit! :search_paths
