@@ -83,7 +83,6 @@ class MediaRemoteHelper {
             MRMediaRemoteGetNowPlayingInfo(
                 DispatchQueue.main,
                 { (information) in
-                    dump(information)
                     var name: String?
                     var artist: String?
                     var playbackRate = 0.0

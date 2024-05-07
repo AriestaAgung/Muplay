@@ -34,6 +34,10 @@ class HomeView: BaseViewController, HomeViewDelegate {
         } else {
             self.titleLabel.stringValue = track.name ?? "fetch track..."
             self.artworkImage.image = NSImage(data: track.artwork ?? Data())
+            MusicFetcherInteractor.shared.fetchSong(title: track.name ?? .emptyString) { data, err in
+                dump(data?.results)
+                self.titleLabel.stringValue = data?.results?.description?.text ?? track.name ?? "fetch track..."
+            }
         }
         
         self.titleLabel.font = .boldSystemFont(ofSize: 20)
