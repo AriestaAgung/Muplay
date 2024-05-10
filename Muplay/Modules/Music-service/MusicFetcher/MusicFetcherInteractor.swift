@@ -19,21 +19,27 @@ class MusicFetcherInteractor: MusicFetcherUseCase {
             q: title,
             shelf: "song"
         )
-        NetworkManager.shared.get(.SEARCH_ENDPOINT, method: .post, request: requestData, responseType: OnlineMusicSearch.self) { data, err in
-//            let id = data?.results?.data?.first?.contents?.first?.id
-            let id = data?.results?.data?.first?.contents?.first?.id
-            dump(data)
-            self.fetchLyrics(id: id ?? .emptyString) { lyricData, err in
-                completion(lyricData, err)
-                
+        NetworkManager.shared.get(.SEARCH_ENDPOINT, method: .get, request: requestData, responseType: OnlineMusicSearch.self) { data, err in
+            let id = data?.result?.first?.videoID
+            if err != nil {
+                completion(nil, err)
+            } else {
+                self.fetchLyrics(id: id ?? .emptyString) { lyricData, err in
+                    completion(lyricData, err)
+                }
             }
         }
     }
     
     internal func fetchLyrics(id: String, completion: @escaping ((OnlineLyricSearch?, Error?) -> Void)) {
         let requestData = LyricFetcherRequest(id: id)
-        NetworkManager.shared.get(.LYRICS_ENDPOINT, method: .post, request: requestData, responseType: OnlineLyricSearch.self) { data, err in
-            completion(data, err)
+        print("IDHERE:\(id)")
+        NetworkManager.shared.get(.LYRICS_ENDPOINT, method: .get, request: requestData, responseType: OnlineLyricSearch.self) { data, err in
+            if err != nil {
+                completion(nil, err)
+            } else {
+                completion(data, err)
+            }
         }
     }
 }

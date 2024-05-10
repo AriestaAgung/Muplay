@@ -28,6 +28,7 @@
 		EBA046702BE7DCCC00B9D1F8 /* MusicFetcherRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBA0466F2BE7DCCC00B9D1F8 /* MusicFetcherRequest.swift */; };
 		EBA046722BE7E96500B9D1F8 /* OnlineLyricSearch.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBA046712BE7E96500B9D1F8 /* OnlineLyricSearch.swift */; };
 		EBB848192BE33E3F000CD60C /* BasePanel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBB848182BE33E3F000CD60C /* BasePanel.swift */; };
+		EBD23E842BEDBB180071B0A0 /* Codable+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBD23E832BEDBB180071B0A0 /* Codable+Extension.swift */; };
 		EBF327BB2BE1D7B4007296FF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBF327BA2BE1D7B4007296FF /* AppDelegate.swift */; };
 		EBF327BD2BE1D7B5007296FF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EBF327BC2BE1D7B5007296FF /* Assets.xcassets */; };
 		EBF327C02BE1D7B5007296FF /* Base in Resources */ = {isa = PBXBuildFile; fileRef = EBF327BF2BE1D7B5007296FF /* Base */; };
@@ -88,6 +89,7 @@
 		EBA0466F2BE7DCCC00B9D1F8 /* MusicFetcherRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MusicFetcherRequest.swift; sourceTree = "<group>"; };
 		EBA046712BE7E96500B9D1F8 /* OnlineLyricSearch.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnlineLyricSearch.swift; sourceTree = "<group>"; };
 		EBB848182BE33E3F000CD60C /* BasePanel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BasePanel.swift; sourceTree = "<group>"; };
+		EBD23E832BEDBB180071B0A0 /* Codable+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Codable+Extension.swift"; sourceTree = "<group>"; };
 		EBF327B72BE1D7B4007296FF /* Muplay.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Muplay.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		EBF327BA2BE1D7B4007296FF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		EBF327BC2BE1D7B5007296FF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -305,6 +307,7 @@
 				EB2F06622BE2551100D1CF1D /* Bundle+Extension.swift */,
 				EB2F06682BE2595E00D1CF1D /* NSMenuItem+Extension.swift */,
 				EB033E7A2BE3D33F001C945A /* String+Extension.swift */,
+				EBD23E832BEDBB180071B0A0 /* Codable+Extension.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -622,6 +625,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EBD23E842BEDBB180071B0A0 /* Codable+Extension.swift in Sources */,
 				EBF328042BE1EF38007296FF /* main.swift in Sources */,
 				EB2F06632BE2551100D1CF1D /* Bundle+Extension.swift in Sources */,
 				EB2F06762BE266A500D1CF1D /* MediaRemoteHelper.swift in Sources */,

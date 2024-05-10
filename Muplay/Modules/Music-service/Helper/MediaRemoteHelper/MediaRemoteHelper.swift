@@ -116,7 +116,6 @@ class MediaRemoteHelper {
                     )
                     
                     if trackInfo != self.prevTrackInfo {
-                        print(self.serializeTrackInfo(trackInfo))
                         self.currentTrackInfo = trackInfo
                         fflush(stdout)
                         self.prevTrackInfo = trackInfo

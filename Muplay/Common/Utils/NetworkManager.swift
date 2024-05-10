@@ -9,7 +9,7 @@ import Alamofire
 
 enum Endpoint: String {
     case SEARCH_ENDPOINT = "search"
-    case LYRICS_ENDPOINT = "lyric"
+    case LYRICS_ENDPOINT = "music/lyrics/plain"
     
 }
 
@@ -20,24 +20,28 @@ enum LocalHTTPMethod: String {
 
 class NetworkManager {
     static let shared = NetworkManager()
-    private let BASE_URL = "https://youtube-music4.p.rapidapi.com/"
+    private let BASE_URL = "https://youtube-music-api3.p.rapidapi.com/"
     
     func get<T: Codable, U: Codable>(_ endpoint: Endpoint, method: LocalHTTPMethod, request: T, responseType: U.Type, completion: @escaping ((U?, Error?) -> Void)) {
         let config = URLSessionConfiguration.default
         config.httpAdditionalHeaders = [
-            "content-type": "application/json",
             "X-RapidAPI-Key": "f831170212msh49d739f9be2fb5ep16f174jsne4a8297b94b7",
-            "X-RapidAPI-Host": "youtube-music4.p.rapidapi.com"
+            "X-RapidAPI-Host": "youtube-music-api3.p.rapidapi.com"
         ]
         
         let session = URLSession(configuration: config)
         guard let url = URL(string: BASE_URL + endpoint.rawValue) else { return }
-        print("PRINTURL: \(url.absoluteString)")
+        guard let urlComponent = URLComponents(string: url.absoluteString + "?" + (request.convertCodableObjectToURLParams() ?? .emptyString)) else {return}
         do {
             var urlRequest = URLRequest(url: url)
             urlRequest.httpMethod = method.rawValue
             
-            urlRequest.httpBody = try JSONEncoder().encode(request)
+            if method == .get {
+                urlRequest.url = urlComponent.url
+            } else if method == .post {
+                urlRequest.httpBody = try JSONEncoder().encode(request)
+            }
+            print(urlRequest.url)
             session.dataTask(with: urlRequest) { (data, response, error) in
                 DispatchQueue.main.async {
                     guard let data = data else {
@@ -46,7 +50,7 @@ class NetworkManager {
                     }
                     do {
                         let decoder = try JSONDecoder().decode(responseType, from: data)
-                        completion(decoder, error)
+                        completion(decoder, nil)
                     } catch (let e) {
                         print(e.localizedDescription)
                         completion(nil, e)

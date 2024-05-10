@@ -6,10 +6,13 @@
 //
 
 import Cocoa
+import SnapKit
 
 class HomeView: BaseViewController, HomeViewDelegate {
     var presenter: (any HomePresenterDelegate)?
     @IBOutlet weak var titleLabel: NSTextField!
+    @IBOutlet weak var lyricLabel: NSTextField!
+    
     @IBOutlet weak var artworkImage: NSImageView!
     
     override func viewDidLoad() {
@@ -22,6 +25,9 @@ class HomeView: BaseViewController, HomeViewDelegate {
     func setupView() {
         titleLabel.stringValue = "Loading Song..."
         setupBackgroundColor(color: NSColor.windowBackgroundColor.withAlphaComponent(0.3).cgColor)
+//        view.snp.makeConstraints { make in
+//            make.height.lessThanOrEqualTo(300)
+//        }
     }
     
     func setupTrackInfo(track: MediaRemoteTrackInfo) {
@@ -35,12 +41,15 @@ class HomeView: BaseViewController, HomeViewDelegate {
             self.titleLabel.stringValue = track.name ?? "fetch track..."
             self.artworkImage.image = NSImage(data: track.artwork ?? Data())
             MusicFetcherInteractor.shared.fetchSong(title: track.name ?? .emptyString) { data, err in
-                dump(data?.results)
-                self.titleLabel.stringValue = data?.results?.description?.text ?? track.name ?? "fetch track..."
+                dump(data)
+                self.lyricLabel.stringValue = data?.description?.text ?? track.name ?? err?.localizedDescription ?? .emptyString
             }
         }
         
         self.titleLabel.font = .boldSystemFont(ofSize: 20)
+        self.titleLabel.textColor = .orange
+        self.lyricLabel.font = .labelFont(ofSize: 15)
+        self.lyricLabel.textColor = .orange
     }
     
 }

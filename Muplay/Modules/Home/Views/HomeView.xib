@@ -3,14 +3,14 @@
     <dependencies>
         <deployment identifier="macosx"/>
         <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="22689"/>
-        <capability name="Named colors" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <objects>
         <customObject id="-2" userLabel="File's Owner" customClass="HomeView" customModule="Muplay" customModuleProvider="target">
             <connections>
                 <outlet property="artworkImage" destination="MzA-BS-TLM" id="PtT-bO-cOp"/>
-                <outlet property="titleLabel" destination="cDy-qF-2hk" id="DHF-VA-njt"/>
+                <outlet property="lyricLabel" destination="BmU-xj-1VU" id="mhY-5A-U16"/>
+                <outlet property="titleLabel" destination="XoB-Dn-fgF" id="e6Z-EK-76W"/>
                 <outlet property="view" destination="Hz6-mo-xeY" id="0bl-1N-x8E"/>
             </connections>
         </customObject>
@@ -18,37 +18,57 @@
         <customObject id="-3" userLabel="Application" customClass="NSObject"/>
         <viewController nibName="HomeView" id="FWs-NU-l8S" customClass="HomeView" customModule="Muplay" customModuleProvider="target"/>
         <customView id="Hz6-mo-xeY">
-            <rect key="frame" x="0.0" y="0.0" width="450" height="201"/>
+            <rect key="frame" x="0.0" y="0.0" width="491" height="279"/>
             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
             <subviews>
-                <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" horizontalCompressionResistancePriority="250" translatesAutoresizingMaskIntoConstraints="NO" id="cDy-qF-2hk">
-                    <rect key="frame" x="22" y="161" width="406" height="16"/>
-                    <textFieldCell key="cell" allowsUndo="NO" title="LABEL" allowsEditingTextAttributes="YES" id="ZKg-Kt-xnI">
-                        <font key="font" usesAppearanceFont="YES"/>
+                <stackView distribution="fill" orientation="horizontal" alignment="centerY" spacing="24" horizontalStackHuggingPriority="249.99998474121094" verticalStackHuggingPriority="249.99998474121094" verticalHuggingPriority="251" detachesHiddenViews="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Rkx-73-k1W">
+                    <rect key="frame" x="24" y="64" width="443" height="191"/>
+                    <subviews>
+                        <imageView horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="MzA-BS-TLM">
+                            <rect key="frame" x="0.0" y="21" width="150" height="150"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="150" id="mtw-J0-ibv"/>
+                                <constraint firstAttribute="height" constant="150" id="p9a-EQ-228"/>
+                            </constraints>
+                            <imageCell key="cell" refusesFirstResponder="YES" alignment="left" imageScaling="proportionallyDown" id="p9X-7z-jas"/>
+                        </imageView>
+                        <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" horizontalCompressionResistancePriority="250" translatesAutoresizingMaskIntoConstraints="NO" id="XoB-Dn-fgF">
+                            <rect key="frame" x="172" y="88" width="273" height="16"/>
+                            <textFieldCell key="cell" title="Label" id="gZo-lK-vWw">
+                                <font key="font" metaFont="system"/>
+                                <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
+                                <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
+                            </textFieldCell>
+                        </textField>
+                    </subviews>
+                    <visibilityPriorities>
+                        <integer value="1000"/>
+                        <integer value="1000"/>
+                    </visibilityPriorities>
+                    <customSpacing>
+                        <real value="3.4028234663852886e+38"/>
+                        <real value="3.4028234663852886e+38"/>
+                    </customSpacing>
+                </stackView>
+                <textField horizontalHuggingPriority="251" horizontalCompressionResistancePriority="250" translatesAutoresizingMaskIntoConstraints="NO" id="BmU-xj-1VU">
+                    <rect key="frame" x="22" y="24" width="447" height="16"/>
+                    <textFieldCell key="cell" title="Label" id="IRS-JC-OCB">
+                        <font key="font" metaFont="system"/>
                         <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
-                        <color key="backgroundColor" name="AccentColor"/>
+                        <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
                     </textFieldCell>
                 </textField>
-                <imageView horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="MzA-BS-TLM">
-                    <rect key="frame" x="24" y="32" width="402" height="97"/>
-                    <imageCell key="cell" refusesFirstResponder="YES" alignment="left" imageScaling="proportionallyDown" id="p9X-7z-jas"/>
-                </imageView>
             </subviews>
             <constraints>
-                <constraint firstAttribute="trailing" secondItem="MzA-BS-TLM" secondAttribute="trailing" constant="24" id="5xb-aH-DRg"/>
-                <constraint firstItem="cDy-qF-2hk" firstAttribute="top" secondItem="Hz6-mo-xeY" secondAttribute="top" constant="24" id="AbU-Zc-y33"/>
-                <constraint firstItem="MzA-BS-TLM" firstAttribute="leading" secondItem="Hz6-mo-xeY" secondAttribute="leading" constant="24" id="TdY-FL-0lV"/>
-                <constraint firstItem="cDy-qF-2hk" firstAttribute="leading" secondItem="Hz6-mo-xeY" secondAttribute="leading" constant="24" id="UN0-6N-j2c"/>
-                <constraint firstAttribute="bottom" secondItem="MzA-BS-TLM" secondAttribute="bottom" constant="32" id="aBd-ZB-7B0"/>
-                <constraint firstAttribute="trailing" secondItem="cDy-qF-2hk" secondAttribute="trailing" constant="24" id="aHR-gQ-K4g"/>
-                <constraint firstItem="MzA-BS-TLM" firstAttribute="top" secondItem="cDy-qF-2hk" secondAttribute="bottom" constant="32" id="ryH-Hx-Zz3"/>
+                <constraint firstItem="BmU-xj-1VU" firstAttribute="leading" secondItem="Hz6-mo-xeY" secondAttribute="leading" constant="24" id="5xN-Ex-2Iz"/>
+                <constraint firstAttribute="bottom" secondItem="BmU-xj-1VU" secondAttribute="bottom" constant="24" id="GxY-Ij-Ctf"/>
+                <constraint firstAttribute="trailing" secondItem="BmU-xj-1VU" secondAttribute="trailing" constant="24" id="L02-Np-GMJ"/>
+                <constraint firstItem="BmU-xj-1VU" firstAttribute="top" secondItem="Rkx-73-k1W" secondAttribute="bottom" constant="24" id="LK4-ds-HmW"/>
+                <constraint firstItem="Rkx-73-k1W" firstAttribute="top" secondItem="Hz6-mo-xeY" secondAttribute="top" constant="24" id="OCe-Ws-TM1"/>
+                <constraint firstAttribute="trailing" secondItem="Rkx-73-k1W" secondAttribute="trailing" constant="24" id="nsg-iC-2qy"/>
+                <constraint firstItem="Rkx-73-k1W" firstAttribute="leading" secondItem="Hz6-mo-xeY" secondAttribute="leading" constant="24" id="xPb-Xr-Z8C"/>
             </constraints>
-            <point key="canvasLocation" x="-3316" y="185.5"/>
+            <point key="canvasLocation" x="-3316.5" y="851.5"/>
         </customView>
     </objects>
-    <resources>
-        <namedColor name="AccentColor">
-            <color red="0.0" green="0.46000000000000002" blue="0.89000000000000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-        </namedColor>
-    </resources>
 </document>

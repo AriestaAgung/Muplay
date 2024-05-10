@@ -7,36 +7,27 @@ import Foundation
 
 // MARK: - OnlineLyricSearch
 struct OnlineLyricSearch: Codable {
-    let success: Bool?
-    let message: String?
-    let results: LyricResults?
-}
-
-// MARK: - Results
-struct LyricResults: Codable {
-    let maxCollapsedLines: Int?
-    let footer: Desc?
-    let maxExpandedLines: Int?
-    let description: Desc?
     let type: String?
+    let description: Description?
+    let maxCollapsedLines, maxExpandedLines: Int?
+    let footer: Description?
 
     enum CodingKeys: String, CodingKey {
+        case type, description
         case maxCollapsedLines = "max_collapsed_lines"
-        case footer
         case maxExpandedLines = "max_expanded_lines"
-        case description, type
+        case footer
     }
 }
 
 // MARK: - Description
-struct Desc: Codable {
+struct Description: Codable {
     let text: String?
-    let runs: [LyricRun]?
+    let runs: [LyricsRun]?
 }
 
 // MARK: - Run
-struct LyricRun: Codable {
-    let italics: Bool?
+struct LyricsRun: Codable {
     let text: String?
-    let bold, strikethrough: Bool?
+    let bold, italics, strikethrough: Bool?
 }
